@@ -12,9 +12,9 @@ class UsersController < ApplicationController
   end
 
   def show
-    user = User.find(params[:id])
-    @name = user.name
-    @prototypes = user.prototypes
+    @user = User.find(params[:id])
+    # @name = user.name
+    @prototype = @user.prototypes
   end
 
   private
